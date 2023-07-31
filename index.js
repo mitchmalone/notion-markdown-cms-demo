@@ -48,12 +48,6 @@ const config = {
   },
   databases: {
     'b28eb69fdbac46a7b42f6b3523e7ba29': {
-      sorts: [
-        {
-          property: "Publish Date",
-          direction: "ascending",
-        }
-      ],
       renderAs: "pages+views",
       pages: {
         destinationDirBuilder: (page) => {
@@ -79,16 +73,7 @@ const config = {
           featureImage: page.properties.get("Feature Image"),
           publishChannels: page.properties.get("Publish Channels"),
         }),
-      },
-      views: [
-        {
-          title: "By Category",
-          properties: {
-            groupBy: "Category",
-            include: ["Category"],
-          },
-        },
-      ]
+      }
     },
   },
 };
