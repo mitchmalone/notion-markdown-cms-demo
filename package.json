@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/mitchmalone/notion-markdown-cms-demo#readme",
   "dependencies": {
-    "@meshcloud/notion-markdown-cms": "^0.11.1"
+    "@meshcloud/notion-markdown-cms": "^0.11.1",
+    "rimraf": "^5.0.1"
   }
 }
