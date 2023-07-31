@@ -128,3 +128,16 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Added by Mitch
+
+public
+static/admin/*.bundle.*
+.DS_Store
+.env.local
+.env.development
+.env.production
+package-lock.json
+
+# Local Netlify folder
+.netlify
