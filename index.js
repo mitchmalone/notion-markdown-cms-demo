@@ -14,7 +14,12 @@ const config = {
       url: page.meta.url,
       title: page.meta.title,
       
-      // TODO: People
+      // TODO: COVER IMAGE -- https://www.notion.so/nomadmore/Page-Property-Type-Cover-Image-e2a0666ce354448d9c868d1503ef2ff4?pvs=4
+      // THIS CURRENTLY DOES NOTHING
+      // coverImage: page.properties.get("Cover"),
+
+      // TODO: Page Property Type: People -- https://www.notion.so/nomadmore/Page-Property-Type-People-3f42f035300c4359ae48f10b9bcdedfc?pvs=4
+      // THIS CURRENTLY RETURNS AN ERROR
       author: page.properties.get("Author"),
       primaryChannel: page.properties.get("Primary Channel"),
       secondaryChannels: page.properties.get("Secondary Channels"),
@@ -27,14 +32,17 @@ const config = {
       location: page.properties.get("Location"),
       link: page.properties.get("Link"),
       
-      // TODO: File
+      // TODO: Page Property Type: Files -- https://www.notion.so/nomadmore/Page-Property-Type-Files-06f9c0e754564a24a48f2371a4d8e873?pvs=4
+      // THIS CURRENTLY RETURNS AN ERROR
       featureImage: page.properties.get("Feature Image"),
       
-      // TODO: Formula
+      // TODO: Page Property Type: Formula -- https://www.notion.so/nomadmore/Page-Property-Type-Formula-75e9dd059d374942b54be0f0881155b9?pvs=4
+      // THIS CURRENTLY RETURNS AN ERROR
       errors: page.properties.get("Errors"),
       featureImage: page.properties.get("Feature Image"),
       
-      // TODO: Formula
+      // TODO: Page Property Type: Formula -- https://www.notion.so/nomadmore/Page-Property-Type-Formula-75e9dd059d374942b54be0f0881155b9?pvs=4
+      // THIS CURRENTLY RETURNS AN ERROR
       publishChannels: page.properties.get("Publish Channels"),
     }),
   },
@@ -55,14 +63,10 @@ const config = {
           id: page.meta.id,
           url: page.meta.url,
           title: page.meta.title,
-          
-          // TODO: People
           author: page.properties.get("Author"),
           primaryChannel: page.properties.get("Primary Channel"),
           secondaryChannels: page.properties.get("Secondary Channels"),
           publishDate: page.properties.get("Publish Date"),
-          
-          // TODO: Formula
           publishUrl: page.properties.get("Publish URL"),
           status: page.properties.get("Status"),
           category: page.properties.get("Category"),
@@ -70,15 +74,9 @@ const config = {
           metaDescription: page.properties.get("Meta Description"),
           location: page.properties.get("Location"),
           link: page.properties.get("Link"),
-          
-          // TODO: File
           featureImage: page.properties.get("Feature Image"),
-          
-          // TODO: Formula
           errors: page.properties.get("Errors"),
           featureImage: page.properties.get("Feature Image"),
-          
-          // TODO: Formula
           publishChannels: page.properties.get("Publish Channels"),
         }),
       },
